@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const NodemonPlugin = require("nodemon-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -16,7 +15,6 @@ module.exports = {
         title: "Webpack Output",
         template: './src/index.html'
     }),
-    new NodemonPlugin(),
     new MiniCssExtractPlugin()
     ],
     module: {
